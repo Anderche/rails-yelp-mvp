@@ -1,4 +1,10 @@
-<% @restaurants.each do |rest| %>
-	<h2><%= rest.name %></h2>
-	<p><%= rest.address %></p>
-<% end %>
+<div class="container">
+	<ul class="list-group">
+		<% @restaurants.each do |rest| %>
+			<li class="list-group-item">
+				<h2><%= rest.name %></h2>
+				<p><%= rest.address %></p>
+			</li>
+		<% end %>
+	</ul>
+</div>
